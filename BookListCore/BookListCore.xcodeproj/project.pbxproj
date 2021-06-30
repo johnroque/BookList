@@ -10,6 +10,7 @@
 		4A70EB5B268CFFA1004DFEE8 /* BookListCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A70EB51268CFFA0004DFEE8 /* BookListCore.framework */; };
 		4A70EB60268CFFA1004DFEE8 /* BookListCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70EB5F268CFFA1004DFEE8 /* BookListCoreTests.swift */; };
 		4A70EB62268CFFA1004DFEE8 /* BookListCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A70EB54268CFFA0004DFEE8 /* BookListCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A70EB6D268D0A3A004DFEE8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70EB6C268D0A3A004DFEE8 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4A70EB5A268CFFA1004DFEE8 /* BookListCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookListCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A70EB5F268CFFA1004DFEE8 /* BookListCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCoreTests.swift; sourceTree = "<group>"; };
 		4A70EB61268CFFA1004DFEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A70EB6C268D0A3A004DFEE8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		4A70EB53268CFFA0004DFEE8 /* BookListCore */ = {
 			isa = PBXGroup;
 			children = (
+				4A70EB6B268D02BE004DFEE8 /* Core Feature */,
 				4A70EB54268CFFA0004DFEE8 /* BookListCore.h */,
 				4A70EB55268CFFA0004DFEE8 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				4A70EB61268CFFA1004DFEE8 /* Info.plist */,
 			);
 			path = BookListCoreTests;
+			sourceTree = "<group>";
+		};
+		4A70EB6B268D02BE004DFEE8 /* Core Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4A70EB6C268D0A3A004DFEE8 /* Category.swift */,
+			);
+			path = "Core Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 				TargetAttributes = {
 					4A70EB50268CFFA0004DFEE8 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					4A70EB59268CFFA1004DFEE8 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A70EB6D268D0A3A004DFEE8 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		4A70EB66268CFFA1004DFEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -357,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnroque.BookListCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +379,7 @@
 		4A70EB67268CFFA1004DFEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -388,6 +404,7 @@
 		4A70EB69268CFFA1004DFEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
@@ -406,6 +423,7 @@
 		4A70EB6A268CFFA1004DFEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DNZ5Z4EKKR;
