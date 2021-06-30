@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Category {
+public struct Category {
     let id: UUID
     let name: String
     let image: Data?
@@ -15,4 +15,14 @@ struct Category {
     let doneCount: Int
     let ongoingCount: Int
     let pendingCount: Int
+    
+    public init(id: UUID, name: String, image: Data?, booksCount: Int, doneCount: Int, ongoingCount: Int, pendingCount: Int) {
+        self.id = id
+        self.name = name
+        self.image = image
+        self.booksCount = booksCount
+        self.doneCount = doneCount
+        self.ongoingCount = ongoingCount
+        self.pendingCount = pendingCount
+    }
 }
