@@ -11,6 +11,7 @@
 		4A70EB60268CFFA1004DFEE8 /* BookListCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70EB5F268CFFA1004DFEE8 /* BookListCoreTests.swift */; };
 		4A70EB62268CFFA1004DFEE8 /* BookListCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A70EB54268CFFA0004DFEE8 /* BookListCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A70EB6D268D0A3A004DFEE8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70EB6C268D0A3A004DFEE8 /* Category.swift */; };
+		4A70EB6F268D0EA4004DFEE8 /* CategoriesSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A70EB6E268D0EA4004DFEE8 /* CategoriesSubscriber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		4A70EB5F268CFFA1004DFEE8 /* BookListCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCoreTests.swift; sourceTree = "<group>"; };
 		4A70EB61268CFFA1004DFEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A70EB6C268D0A3A004DFEE8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4A70EB6E268D0EA4004DFEE8 /* CategoriesSubscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSubscriber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				4A70EB6C268D0A3A004DFEE8 /* Category.swift */,
+				4A70EB6E268D0EA4004DFEE8 /* CategoriesSubscriber.swift */,
 			);
 			path = "Core Feature";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A70EB6D268D0A3A004DFEE8 /* Category.swift in Sources */,
+				4A70EB6F268D0EA4004DFEE8 /* CategoriesSubscriber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

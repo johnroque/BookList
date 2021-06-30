@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+public protocol CategoriesSubscriber {
+    typealias SubscriberBlock = ([Category])
+    
+    func subscribe(_ block: (SubscriberBlock) -> Void)
+}
